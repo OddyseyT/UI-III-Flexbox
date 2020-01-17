@@ -66,13 +66,25 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 h2 {
+	display: flex;
 	text-transform: capitalize;
 }
 	
 h1 {
+	display: flex;
 	text-transform: capitalize;
+}
+
+#pageheader {
+	display: flex;
 	font-size: 65px;
 	text-align: center;
+	
+}
+
+img {
+	display: flex;
+	justify-content: space-around;
 }
 
 #logopic {
@@ -82,15 +94,12 @@ h1 {
 
 .topofpage {
 	display: flex;
-	padding: 3%;
-	width: 80%;
 	border-top: 3px solid grey;
 }
 
 .middle {
 	display: flex;
-	padding: 3%;
-	width: 80%;
+	justify-content: space-evenly;
 	border-bottom: 3px solid grey;
 }
 .bottom {
@@ -101,8 +110,10 @@ h1 {
 
 header {
 	display: flex;
-	padding: 5%;
-	width: 75%;
+	padding: 3%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 footer {
@@ -112,22 +123,34 @@ footer {
 }
 button {
 	display: flex;
-	margin: 0 42%;
+	text-align:center;
+	width: 105px;
+	font-size: 16px;
+	background-color: white;
+}
+
+button:hover {
+	background-color: lightgrey;
 }
 
 #codesnippets {
-	margin: auto;
-	padding-left: 3%;
-	padding-right: 3%;
+	display:flex;
+	padding: 3%;
 }
 .format1 {
-	margin: auto;
-	width: 49%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
 .format2 {
 	display: flex;
-	width: 31%;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
 .format3 {
@@ -139,32 +162,30 @@ footer {
 	font-size: 10px;
 }
 
-.getstarted {
-	margin: auto;
-}
-
 .navigation {
 	display: flex;
 	flex-direction: row;	
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 
 }
 
 .subformat {
 	display: flex;
-	width: 49%;
-	margin: 0 auto;
+	align-items: center;
+	flex-direction: column;
 }
 
 nav a:hover {
-	background-color: blue;
+	background-color: darkgrey;
 	color: white;
 }
 
 nav a {
 	display: flex;
 padding-left: 15%;
+color: darkgrey;
+text-decoration: none;
 }
 
 nav {
