@@ -203,6 +203,12 @@ footer {
 	font-size: 10px;
 }
 
+#serviceheaderimage {
+	display:flex;
+	padding: 3%;
+	justify-content: center;
+}
+
 #serviceheader {
 	display:flex;
 	flex-direction: column;
