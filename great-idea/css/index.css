@@ -66,17 +66,19 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 h2 {
-	display: flex;
 	text-transform: capitalize;
 }
 	
 h1 {
-	display: flex;
 	text-transform: capitalize;
 }
 
+.container {
+	max-width: 800px;
+	margin: auto;
+}
+
 #pageheader {
-	display: flex;
 	font-size: 65px;
 	text-align: center;
 	
@@ -94,6 +96,8 @@ img {
 
 .topofpage {
 	display: flex;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	border-top: 3px solid grey;
 }
 
@@ -128,8 +132,7 @@ nav {
 
 
 nav a {
-	display: flex;
-padding-right: 15%;
+padding-right: 5%;
 color: darkgrey;
 text-decoration: none;
 }
@@ -146,28 +149,26 @@ nav a:hover {
 
 .middle {
 	display: flex;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	justify-content: space-evenly;
 	border-bottom: 3px solid grey;
 }
 .bottom {
 	display: flex;
-	padding: 3%;
+	padding-top: 3%;
 	width: 80%;
 }
 .format1 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	padding-left: 3%;
-	padding-right: 3%;
+	justify-content: space-around;
 }
 
 .format2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	padding-left: 3%;
-	padding-right: 3%;
 }
 
 .format3 {
@@ -180,7 +181,7 @@ nav a:hover {
 	display: flex;
 	flex-direction: row;	
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 
 }
 
@@ -193,6 +194,7 @@ nav a:hover {
 
 .infostyle {
 	display:flex;
+	max-width: 98%;
 	flex-direction: column;
 }
 
